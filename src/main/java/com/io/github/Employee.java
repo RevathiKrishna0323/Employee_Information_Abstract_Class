@@ -13,12 +13,12 @@ public abstract class Employee {
     private String code;
     private String dateOfBirth;
     private String age;
-    private String salary;
+    private double salary;
 
-    public Employee() {
+    public Employee(String employeeName, String employeeCode, String dob, int age, double salary) {
     }
 
-    public Employee(String employeeName, String code, String dateOfBirth, String age, String salary) {
+    public Employee(String employeeName, String code, String dateOfBirth, String age, double salary) {
         this.employeeName = employeeName;
         this.code = code;
         this.dateOfBirth = dateOfBirth;
@@ -83,5 +83,6 @@ public abstract class Employee {
     public int hashCode() {
         return Objects.hash(employeeName, code, dateOfBirth, age, salary);
     }
-    public abstract double CalculateIncrement(float hikePercentage);
+
+    public abstract double calculateIncrement(float hikePercentage);
 }

@@ -11,6 +11,7 @@ public class Manager extends Employee {
     private int teamRatings;
 
     public Manager(int teamSize, int teamRatings) {
+        super(employeeName, employeeCode, dob, age, salary);
         this.teamSize = teamSize;
         this.teamRatings = teamRatings;
     }
