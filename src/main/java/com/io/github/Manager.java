@@ -6,5 +6,8 @@
 
 package com.io.github;
 
-public class Manager {
+public class Manager extends Employee {
+    private int teamSize;
+    private int teamRatings;
+
 }
