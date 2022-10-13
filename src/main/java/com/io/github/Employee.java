@@ -6,23 +6,40 @@
 
 package com.io.github;
 
-import java.util.Objects;
-
-public abstract class Employee {
+public class Employee {
     private String employeeName;
-    private String code;
-    private String dateOfBirth;
-    private String age;
+    private String employeeCode;
+    private String dob;
+    private int age;
     private double salary;
 
-    public Employee(String employeeName, String employeeCode, String dob, int age, double salary) {
+    public Employee(String employeeName,
+                    String employeeCode, String dob,
+                    int age, double salary) {
+        this.employeeName = employeeName;
+        this.employeeCode = employeeCode;
+        this.dob = dob;
+        this.age = age;
+        this.salary = salary;
     }
 
-    public Employee(String employeeName, String code, String dateOfBirth, String age, double salary) {
+    public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
-        this.code = code;
-        this.dateOfBirth = dateOfBirth;
+    }
+
+    public void setEmployeeCode(String employeeCode) {
+        this.employeeCode = employeeCode;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
@@ -30,59 +47,20 @@ public abstract class Employee {
         return employeeName;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public String getEmployeeCode() {
+        return employeeCode;
     }
 
-    public String getCode() {
-        return code;
+    public String getDob() {
+        return dob;
     }
 
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public String getAge() {
+    public int getAge() {
         return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 
     public double getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-   /* @Override
-    public String toString() {
-        return "Employee{" + "employeeName='" + employeeName + '\'' + ", code='" + code + '\'' + ", dateOfBirth='" + dateOfBirth + '\'' + ", age='" + age + '\'' + ", salary='" + salary + '\'' + '}';
-    }*/
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return Objects.equals(employeeName, employee.employeeName) && Objects.equals(code, employee.code) && Objects.equals(dateOfBirth, employee.dateOfBirth) && Objects.equals(age, employee.age) && Objects.equals(salary, employee.salary);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(employeeName, code, dateOfBirth, age, salary);
-    }
-
-    public abstract double calculateIncrement(float hikePercentage);
 }

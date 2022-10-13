@@ -10,14 +10,8 @@ public class Manager extends Employee {
     private int teamSize;
     private int teamRatings;
 
-    public Manager(int teamSize, int teamRatings) {
+    public Manager(String employeeName, String employeeCode, String dob, int age, double salary, int teamSize, int teamRatings) {
         super(employeeName, employeeCode, dob, age, salary);
-        this.teamSize = teamSize;
-        this.teamRatings = teamRatings;
-    }
-
-    public Manager(String employeeName, String code, String dateOfBirth, String age, String salary, int teamSize, int teamRatings) {
-        super(employeeName, code, dateOfBirth, age, salary);
         this.teamSize = teamSize;
         this.teamRatings = teamRatings;
     }
@@ -38,12 +32,12 @@ public class Manager extends Employee {
         this.teamRatings = teamRatings;
     }
 
-    @Override
-    public double CalculateIncrement(float hikePercentage) {
-        if (teamRatings >= 7) {
+    public double calculateIncrement(float hikePercentage) {
+        if (teamRatings >= 8) {
             super.setSalary(super.getSalary() * hikePercentage);
         }
         return super.getSalary();
-
     }
+
+
 }
