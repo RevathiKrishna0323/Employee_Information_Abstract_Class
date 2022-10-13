@@ -8,7 +8,7 @@ package com.io.github;
 
 import java.util.Objects;
 
-public class Employee {
+public abstract class Employee {
     private String employeeName;
     private String code;
     private String dateOfBirth;
@@ -83,4 +83,5 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(employeeName, code, dateOfBirth, age, salary);
     }
+    public abstract double CalculateIncrement(float hikePercentage);
 }
