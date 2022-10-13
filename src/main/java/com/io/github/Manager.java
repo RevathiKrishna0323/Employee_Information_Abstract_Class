@@ -36,4 +36,13 @@ public class Manager extends Employee {
     public void setTeamRatings(int teamRatings) {
         this.teamRatings = teamRatings;
     }
+
+    @Override
+    public double CalculateIncrement(float hikePercentage) {
+        if (teamRatings >= 7) {
+            super.setSalary(super.getSalary() * hikePercentage);
+        }
+        return super.getSalary();
+
+    }
 }
