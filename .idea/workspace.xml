@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f285c7-777a-45f9-9cae-60aa46371537" name="Changes" comment="created attributes in the class Employee.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/io/github/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/io/github/Employee.java" afterDir="false" />
-    </list>
+    <list default="true" id="d0f285c7-777a-45f9-9cae-60aa46371537" name="Changes" comment="declared attributes to  the Manager.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665630093322</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created no args constructor, parameterised constructor, getter and setter methods, theEquals and hashcode() methods and reformatted the code.">
+      <created>1665630259568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630259568</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created Manager.java">
+      <created>1665630318217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630318217</updated>
+    </task>
+    <task id="LOCAL-00009" summary="declared attributes to  the Manager.java">
+      <created>1665630444279</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630444279</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +130,9 @@
     <MESSAGE value="changed the maven compiler source and target JDK versions from 19 to 11" />
     <MESSAGE value="created Employee.java" />
     <MESSAGE value="created attributes in the class Employee.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="created attributes in the class Employee.java" />
+    <MESSAGE value="created no args constructor, parameterised constructor, getter and setter methods, theEquals and hashcode() methods and reformatted the code." />
+    <MESSAGE value="created Manager.java" />
+    <MESSAGE value="declared attributes to  the Manager.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="declared attributes to  the Manager.java" />
   </component>
 </project>
